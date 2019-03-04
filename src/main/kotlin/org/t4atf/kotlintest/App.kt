@@ -7,6 +7,7 @@ class App {
 
 	val greeting: String
 		get() {
+			println("app " + Thread.currentThread().name)
 			return threadLocal.get()
 		}
 }
